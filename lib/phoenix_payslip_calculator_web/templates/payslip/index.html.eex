@@ -1,0 +1,3 @@
+<div class="jumbotron">
+  <h2>Payslip Details for <%= @firstname %></h2>
+</div>
