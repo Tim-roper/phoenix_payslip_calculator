@@ -1,10 +1,14 @@
 <div class="jumbotron">
-  <h2>Welcome the Payslip Calculator</h2>
-  <p class="lead">This app will calculate payslip details based on the details entered.</p>
+  <h2>Welcome to a Payslip Calculator</h2>
+  <p class="lead">See how much debt you'll be in by filling out the details:</p>
 </div>
 <div>
   <%= form_for @conn, payslip_path(@conn, :calculate), [as: :employee], fn f -> %>
-    <%= text_input f, :firstname %>
+    First name: <%= text_input f, :firstname %><br>
+    Last name: <%= text_input f, :lastname %><br >
+    Annual Salary: <%= text_input f, :annual_salary %><br >
+    Superannuation rate (%): <%= text_input f, :super_rate %><br >
+    Payment Month: <%= select(f, :payment_month, [:Jan, :Feb, :Mar, :Apr, :May, :Jun, :Jul, :Aug, :Sep, :Oct, :Nov, :Dec]) %><br />
     <%= submit "Calculate" %>
   <% end %>
 </div>

@@ -1,3 +1,21 @@
 <div class="jumbotron">
   <h2>Payslip Details for <%= @firstname %></h2>
+  <table>
+    <th>
+      <td>Name</td>
+      <td>Pay Period</td>
+      <td>Gross income</td>
+      <td>Income tax</td>
+      <td>Net income</td>
+      <td>Super</td>
+    </th>
+    <tr>
+      <td><%= "#{@firstname} #{@lastname}" %></td>
+      <td><%= @pay_period %></td>
+      <td><%= @annual_salary %></td>
+      <td><%= @income_tax %></td>
+      <td><%= @net_income %></td>
+      <td><%= @superannuation %></td>
+    </tr>
+  </table>
 </div>

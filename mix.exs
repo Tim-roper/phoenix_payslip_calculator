@@ -40,6 +40,7 @@ defmodule PhoenixPayslipCalculator.Mixfile do
       {:cowboy, "~> 1.0"},
       {:plug_cowboy, "~> 1.0"},
       {:distillery, "~> 1.5"},
+      {:payslip_calculator, git: "git@github.com:Tim-roper/payslip-elixir.git", ref: "737aeb0f3b1f94aa36dd1321b58b3f6e4830bab8"},
     ]
   end
 end
