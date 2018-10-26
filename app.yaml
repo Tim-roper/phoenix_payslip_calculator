@@ -1,4 +1,5 @@
 env: flex
-runtime: gs://elixir-runtime/elixir.yaml
+runtime: custom
 runtime_config:
   release_app: phoenix_payslip_calculator
+  enable_health_check: False
